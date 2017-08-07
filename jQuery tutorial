@@ -1,0 +1,29 @@
+
+
+
+
+
+jQuery Syntax
+$(selector).action()
+A $ sign to define/access jQuery
+A (selector) to "query (or find)" HTML elements
+A jQuery action() to be performed on the element(s)
+
+
+
+
+
+
+jQuery Selectors
+$("*") - Selects all elements
+$(this) - Selects the current element
+$("p.intro") - Selects all <p> elements with class ="intro"
+$("p:first") - Selects the first <p> element
+$("ul li:first") - Selects the first <li> element of the first <ul> element
+$("ul li:first-child") - Selects the first <li> element of every <ul> element
+$("[href]") - Selects all elements with an href attribute
+$("a[target='_blank']") - Selects all <a> element with a target attribute value = "_blank"
+$("a[target!= '_blank']") - Selects all <a> element with a target attribute value NOT equal to "_blank"
+$(":button") - Selects all <button> elements and <input> elements of type = "button"
+$("tr:even") - Selects all even <tr> elements
+$("tr:odd") - Selects all odd <tr> elements
