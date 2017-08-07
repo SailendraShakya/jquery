@@ -1,18 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
-	<title>Jquery Day 1</title>
-	<script
+<script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="js/main.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.city {
+    float: left;
+    margin: 5px;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+a.button, button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+a.button {
+	padding: 5px 32px;
+	font-size: 12px;
+}
+
+</style>
 </head>
 <body>
-<h1>Jquery Day 1</h1>
-<a href="www.w3schools.com/">Add Button</a>
+
+<h1>Responsive Web Design Demo</h1>
+
+<div class="city">
+<h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+<a class="button" href="www.w3schools.com/">Add Button</a>
 <p>Click here and I will disappear.</p>
 <button type ="button" id ="myButton">Click</button>
+</div>
+
+<div class="city">
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p> 
+  <p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+</div>
+
+<div class="city">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+  <p>It is the center of the Greater Tokyo Area,  and the most populous metropolitan area in the world.</p>
+</div>
+
 </body>
 </html>
