@@ -6,8 +6,8 @@ $(document).ready(function(){
 		$(this).hide();
 	});
 
-	$("a.button").click(function(){
-
+	$("a.button").click(function(event){
+		event.preventDefault();
 		if(toggle){
 			$(this).parent('.city').css('background-color',' #e6f7ff');
 			toggle = false;
