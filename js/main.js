@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var toggle = true; 
 	var count = 0;
-	var myVar;
+	var myVar = [];
 	var colorlist = ['#e6f7ff','#ffffff','#ffb3ff','#66ff66'];
 	$("p").click(function(){
 		$(this).hide();
@@ -10,6 +10,7 @@ $(document).ready(function(){
 	$(".stopButton").click(function(){
 		
 		var selector = $(this);
+		var element = selector.data('element');
 		console.log(selector.attr('data-status'));
 		if(selector.data('status') ==1){
 			console.log("Shweta");
@@ -18,7 +19,7 @@ $(document).ready(function(){
 			console.log("Sailendra");
 		}
 		//event.preventDefault();
-		stopFunction();
+		stopFunction(element);
 		/*if(toggle){
 			$(this).parent('.city').css('background-color',' #e6f7ff');
 			toggle = false;
@@ -32,7 +33,9 @@ $(document).ready(function(){
 	$(".myButton").click(function(){
 		var count = 0;
 		var selector = $(this);
-		myVar = setInterval(function(){myFunction(selector)},500);
+		var element = selector.data('element');
+		console.log(element);
+		myVar[element] = setInterval(function(){myFunction(selector)},500);
 		/*
 		if(count != colorlist.length){
 			//alert(count);
@@ -62,8 +65,9 @@ $(document).ready(function(){
 		}
 	}
 
-	function stopFunction(){
-		clearInterval(myVar);
-		console.log(colorlist[count]);
+	function stopFunction(element){
+		console.log(element);
+		console.log(parseInt(element));
+		clearInterval(myVar[parseInt(element)]);
 	}
 });
